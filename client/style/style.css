@@ -167,17 +167,55 @@ md-card-content {
 .fa.fa-ellipsis-v {
   margin-top: 5px;
 }
-
+/********************** Modal Styles ************************/
 .createBoardModal {
   padding: 15px;
+  background-color: #2C3E50;
+  color: #2ECC71;
+}
+
+.createBoardTitle {
+  text-align: center;
+}
+
+.inviteMembersTitle {
+  text-align: center;
+}
+
+.newBoardNameInput {
+ color: #2ECC71 !important;
+}
+
+.invitedBoardMembers {
+  min-height: 100px;
+}
+
+.inviteMembersButton {
+
+}
+
+.createBoardButton {
+  display: block;
+  margin: 0 auto;
+  background-color: #2ECC71;
 }
 
 .successfulInvite {
-  color: green;
+  color: #2C3E50;
+  padding: 10px;
+  display: inline;
+  font-size: .75em;
+  border-radius: 3px;
+  margin: 2px;
+  background-color: #2ECC71;
 }
 
 .userDoesntExist {
-  color: red;
+  color: #E74C3C;
+}
+
+.newBoardInviteMembersInput {
+  color: #2ECC71 !important;
 }
 
 .cardModal {
@@ -545,9 +583,10 @@ input, .messageInput {
   display: none !important;
 }
 
+
+/* Media Queries */
 @media(max-width: 600px) {
   .flexContainer {
     padding-left: 67px;
   }
 }
-

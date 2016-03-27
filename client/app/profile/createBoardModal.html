@@ -1,36 +1,33 @@
 <div id="createBoardModalPopup" class="createBoardModal">
-  <h3>Create a New Board</h3>
+  <h3 class="createBoardTitle">Create a New Board</h3>
   <form>
 
     <!-- board name input -->
     <md-input-container>
       <label>Board Name</label>
-      <input ng-model="newBoardName"></input>
+      <input class="newBoardNameInput" ng-model="newBoardName" type="text"></input>
     </md-input-container>
   </form>
 
   <!-- invites member on enter -->
   <form ng-submit="addInvite()">
-    <h4>Invite Members</h4>
-    <md-input-container>
+    <h4 class="inviteMembersTitle">Invite Members</h4>
+    <md-input-container >
       <label>Add Members</label>
-
       <!-- member email input -->
-      <input ng-model="inviteMember" type="text"></input>
-      <md-button id="inviteSubmit" type="submit">+</md-button>
+      <input class="newBoardInviteMembersInput" ng-model="inviteMember" type="text"></input>
+      <md-button id="inviteSubmit" class="inviteMembersButton" type="submit" hide>+</md-button>
     </md-input-container>
   </form>
 
   <!-- shows members that have been invited while creating this board -->
   <div class="invitedBoardMembers">
-    <p class="successfulInvite" id= "invitedMember" ng-repeat="member in boardMembers" ng-click="unInvite($index)">
-      {{ member.email }}
-    </p>
-
+      <span id="invitedMember" class="successfulInvite" ng-click="unInvite($index)" ng-repeat="member in boardMembers">
+        {{ member.email }}
+      </span>
     <!-- checks if user exists in database, if not, this notification will show -->
-    <p class="userDoesntExist" ng-show="!userExists">*** {{inviteMember}} does not exist <br> please enter a valid email</p>
+    <p class="userDoesntExist" ng-show="!userExists"><i class="fa fa-times-circle"></i> {{inviteMember}} does not exist <br> please enter a valid email</p>
   </div>
-
   <!-- create board button -->
-  <md-button id="submitCreateBoard" ng-click="createBoard()">Create Board</md-button>
+  <md-button class="md-raised createBoardButton " id="submitCreateBoard" ng-click="createBoard()">Create Board</md-button>
 </div>
