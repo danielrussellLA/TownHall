@@ -1,33 +1,16 @@
 <div id="createBoardModalPopup" class="createBoardModal">
   <h3 class="createBoardTitle">Create a New Board</h3>
   <form>
-<<<<<<< a798a304a7a29ad35e4af15f59283391d0523f44
-
-    <!-- board name input -->
-    <md-input-container>
-      <label>Board Name</label>
-      <input class="newBoardNameInput" ng-model="newBoardName" type="text"></input>
-    </md-input-container>
-=======
+      <!-- board name input -->
       <input class="newBoardNameInput" ng-model="newBoardName" type="text" placeholder="Board Name"></input>
->>>>>>> [feature] styled create board modal
   </form>
 
   <!-- invites member on enter -->
   <form ng-submit="addInvite()">
-<<<<<<< a798a304a7a29ad35e4af15f59283391d0523f44
-    <h4 class="inviteMembersTitle">Invite Members</h4>
-    <md-input-container >
-      <label>Add Members</label>
-      <!-- member email input -->
-      <input class="newBoardInviteMembersInput" ng-model="inviteMember" type="text"></input>
-      <md-button id="inviteSubmit" class="inviteMembersButton" type="submit" hide>+</md-button>
-    </md-input-container>
-=======
     <h3 class="inviteMembersTitle">Invite Members</h3>
+      <!-- member email input -->
       <input class="newBoardInviteMembersInput" ng-model="inviteMember" type="text" placeholder="Add Members"></input>
       <md-button id="inviteSubmit" class="md-raised inviteMembersButton" type="submit">+</md-button>
->>>>>>> [feature] styled create board modal
   </form>
 
   <!-- shows members that have been invited while creating this board -->

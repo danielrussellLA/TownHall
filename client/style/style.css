@@ -172,6 +172,7 @@ md-card-content {
   padding: 15px;
   background-color: #2C3E50;
   color: #2ECC71;
+  min-width: 300px;
 }
 
 .createBoardTitle {
@@ -193,8 +194,11 @@ md-card-content {
 }
 
 .invitedBoardMembers {
+  margin: 0 auto;
+  /*display: block;*/
   min-height: 100px;
   margin-top: 15px;
+  /*border: 1px solid #2ECC71;*/
 }
 
 .inviteMembersButton {
@@ -206,7 +210,7 @@ md-card-content {
 .createBoardButton {
   display: block;
   margin: 0 auto;
-  background-color: #2ECC71;
+  /*background-color: #2ECC71;*/
 }
 
 .successfulInvite {
@@ -215,12 +219,13 @@ md-card-content {
   display: inline;
   font-size: .75em;
   border-radius: 3px;
-  margin: 2px;
+  margin: 5px;
   background-color: #2ECC71;
 }
 
 .userDoesntExist {
   color: #E74C3C;
+  text-align: center;
 }
 
 .newBoardInviteMembersInput {

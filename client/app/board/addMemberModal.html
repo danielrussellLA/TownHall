@@ -1,15 +1,10 @@
 <div id="createBoardModalPopup" class="createBoardModal">
   <form ng-submit="addInvite()">
-    <h4>Invite Members</h4>
-
-    <!-- add members email input -->
-    <md-input-container>
-      <label>Add Members</label>
-      <input ng-model="inviteMember" type="text" placeholder="email"></input>
-
+    <h3 class="inviteMembersTitle">Invite Members</h3>
+      <!-- add members email input -->
+      <input ng-model="inviteMember" class="newBoardInviteMembersInput" type="text" placeholder="Add Members by Email"></input>
       <!-- button to add members -->
-      <md-button id="inviteSubmit" type="submit">+</md-button>
-    </md-input-container>
+      <md-button id="inviteSubmit" type="submit" class="inviteMembersButton">+</md-button>
   </form>
 
   <!-- modal that shows invited members -->
@@ -22,5 +17,5 @@
   </div>
 
   <!-- add member button -->
-  <md-button id="addMembers" ng-click="addMembers()">Add Members</md-button>
+  <md-button id="addMembers" ng-click="addMembers()" class="createBoardButton">Add Members</md-button>
 </div>
