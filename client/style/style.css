@@ -16,6 +16,32 @@ li {
 
 body {
   overflow-y: hidden;
+  background-color: #34495E;
+}
+
+/* Signin Signout */
+
+.signinSignoutTitle {
+  color:  #2ECC71;
+}
+
+.haveAnAccount {
+  color:  #2ECC71;
+}
+
+.createAnAccountSignin {
+  color: #E74C3C;
+}
+
+.signinSignoutInput {
+  margin: 0 auto;
+  margin-bottom: 15px;
+  display: block;
+  color: #2ECC71 !important;
+  background-color: #2C3E50;
+  border: 1px solid #2ECC71;
+  height: 1.9em;
+  border-radius: 2px;
 }
 
 /************************* Nav Bar **********************************/
@@ -168,6 +194,17 @@ md-card-content {
   margin-top: 5px;
 }
 /********************** Modal Styles ************************/
+md-dialog, md-dialog-content, md-dialog-actions {
+  background-color: #34495E;
+  color: #2ECC71;
+  text-align: center;
+}
+
+button.md-default-theme.md-primary, .md-button.md-primary {
+  color: #2ECC71 !important;
+  background-color: #2C3E50 !important;
+}
+
 .createBoardModal {
   padding: 15px;
   background-color: #2C3E50;
@@ -240,6 +277,77 @@ md-card-content {
 
 .cardModal {
   padding: 15px;
+  background-color: #2C3E50;
+  color: #2ECC71;
+  min-width: 300px;
+}
+
+.cardModalTitle {
+  text-align: center;
+}
+
+.cardModalText {
+  padding: 15px;
+  height: 100%;
+  background-color: #ECF0F1;
+  color: #616161;
+  border-radius: 10px;
+  max-width: 300px;
+  word-wrap: break-word;
+  margin-top: 0;
+  margin: 5px;
+  word-wrap: break-word;
+}
+
+.cardModalText:hover {
+  background-color: rgba(46, 204, 113, .15);
+  cursor: pointer;
+  color: white;
+}
+
+.commentUsername {
+  font-size: .8em;
+  color: #ECF0f1;
+  margin-bottom: 2px;
+  margin-left: 15px;
+}
+
+.comment {
+  margin: 0 auto;
+  display: block;
+  padding: 15px;
+  height: 100%;
+  background-color: #2ECC71;
+  color: #2C3E50;
+  border-radius: 10px;
+  word-wrap: break-word;
+  max-width: 300px;
+}
+
+.commentList {
+  margin: 0 auto;
+  padding-left: 0px;
+  width: 80%;
+}
+
+.commentInput {
+  margin: 0 auto;
+  display: block;
+  padding: 15px;
+  height: 100%;
+  background-color: #ECF0F1;
+  color: #616161;
+  border-radius: 10px;
+  max-width: 300px;
+  word-wrap: break-word;
+  /*margin-top: 0;*/
+  /*margin: 5px;*/
+  word-wrap: break-word;
+}
+
+.addCommentButton {
+  margin: 0 auto;
+  display: block;
 }
 
 .alien {
@@ -470,17 +578,6 @@ ul[dnd-list] > li {
  height: 500px;
  width: 200px;
  text-align: center;
-}
-
-.cardModalText:hover {
-  background-color: pink;
-  cursor: pointer;
-}
-
-.comment {
-  white-space: pre-wrap;
-  background-color: grey;
-  margin: 5px;
 }
 
 /************* master styles for main dashboard view **************/

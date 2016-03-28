@@ -1,26 +1,26 @@
 <div class="cardModal">
-  <h3>Details</h3>
-  <p class="cardModalText" editable-textarea=card.text>{{card.text}}</p>
-  <div layout="row">
+  <h3 class="cardModalTitle">Card Text</h3>
+  <div
+    class="cardModalText"
+    inline-edit=card.text inline-edit-placeholder="Edit Card" inline-edit-on-blur="save" inline-edit-btn-edit="" inline-edit-callback="editCard(newValue)" inline-edit-on-click></div>
+  <div>
+    <h3 class="cardModalTitle">Comments</h3>
 
     <!-- comment section in the card modal -->
     <div class="commentSection" layout="column">
       <form ng-submit="addComment(comment)">
-        <md-input-container>
-
-          <!-- adds comments -->
-          <label>Add Comment</label>
-          <input ng-model="comment" md-select-on-focus></input>
-          <md-button ng-click="addComment(comment)">Save</md-button>
-        </md-input-container>
+        <!-- adds comments -->
+          <textarea ng-model="comment" placeholder="Add Comment" type="text" class="commentInput"></textarea>
+          <md-button ng-click="addComment(comment)" class="addCommentButton">Save</md-button>
       </form>
-
+      
       <!-- repeats saved comments -->
-      <ul>
-        <li class="comment" ng-repeat="comment in card.comments">{{comment.createdBy.name}}: {{comment.text}}</li>
+      <ul class="commentList">
+        <li ng-repeat="comment in card.comments">
+          <p class="commentUsername">{{comment.createdBy.name}}</p>
+          <p class="comment">{{comment.text}}</p>
+        </li>
       </ul>
-    </div>
-    <div class="buttons" layout="column">
     </div>
   </div>
 </div>

@@ -12,8 +12,9 @@
     <p class="successfulInvite" id= "invitedMember" ng-repeat="member in boardMembers" ng-click="unInvite($index)">
       {{ member.email }}
     </p>
+
     <!-- shows this message if user email does not exist -->
-    <p class="userDoesntExist" ng-show="!userExists">*** {{inviteMember}} does not exist <br> please enter a valid email</p>
+    <p class="userDoesntExist" ng-show="!userExists"><i class="fa fa-times-circle"></i> user does not exist <br> please enter a valid email</p>
   </div>
 
   <!-- add member button -->

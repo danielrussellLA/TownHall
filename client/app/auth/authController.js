@@ -7,17 +7,18 @@ TownHall.controller('authCtrl', function($scope, Auth, User, $firebaseAuth,
 
     $scope.user = {};
 
-    // signs user in
-    $scope.signin = function() {
-      // checks if user credentials are correct
-      ref.authWithPassword({
-        email: $scope.user.email,
-        password: $scope.user.password
-      }, function(err, authData) {
-        // uses the following sweet alerts if there is an error
-        if (err) {
-          switch (err.code) {
-            case 'INVALID_EMAIL':
+  // signs user in
+  $scope.signin = function() {
+    // checks if user credentials are correct
+    console.log('signin');
+    ref.authWithPassword({
+      email: $scope.user.email,
+      password: $scope.user.password
+    }, function(err, authData) {
+      // uses the following sweet alerts if there is an error
+      if (err) {
+        switch (err.code) {
+          case 'INVALID_EMAIL':
             sweetAlert('Oops', 'The specified user account email is invalid.', 'error');
             break;
             case 'INVALID_PASSWORD':
