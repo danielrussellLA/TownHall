@@ -183,15 +183,24 @@ md-card-content {
 }
 
 .newBoardNameInput {
- color: #2ECC71 !important;
+  margin: 0 auto;
+  display: block;
+  color: #2ECC71 !important;
+  background-color: #2C3E50;
+  border: 1px solid #2ECC71;
+  height: 1.9em;
+  border-radius: 2px;
 }
 
 .invitedBoardMembers {
   min-height: 100px;
+  margin-top: 15px;
 }
 
 .inviteMembersButton {
-
+  margin: 0 auto;
+  display: block;
+  margin-top: 5px;
 }
 
 .createBoardButton {
@@ -215,7 +224,13 @@ md-card-content {
 }
 
 .newBoardInviteMembersInput {
+  margin: 0 auto;
+  display: block;
   color: #2ECC71 !important;
+  background-color: #2C3E50;
+  border: 1px solid #2ECC71;
+  height: 1.9em;
+  border-radius: 2px;
 }
 
 .cardModal {
