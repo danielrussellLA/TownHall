@@ -1,34 +1,19 @@
 <div class="container">
   <md-content layout-padding layout="column" layout-align="center center">
 
-    <h2 class="signinSignoutTitle">Create a Town Hall Account</h2>
+    <h2 class="signinSignupTitle">Create a Town Hall Account</h2>
+      <!-- username input -->
+      <input ng-model="user.name" class="signinSignupInput" placeholder="Name">
+      <!-- email input -->
+      <input ng-model="user.email" class="signinSignupInput" placeholder="Email">
+      <!-- password input -->
+      <input ng-model="user.password" type="password" class="signinSignupInput" placeholder="Password">
+      <!-- confirm password input -->
+      <input ng-model="confirmpw" ng-required type="password" class="signinSignupInput" placeholder="Confirm Password">
 
-    <!-- username input -->
-    <md-input-container>
-      <label>Name</label>
-      <input ng-model="user.name">
-    </md-input-container>
-
-    <!-- email input -->
-    <md-input-container>
-      <label>Email</label>
-      <input ng-model="user.email">
-    </md-input-container>
-
-    <!-- password input -->
-    <md-input-container>
-      <label>Password</label>
-      <input ng-model="user.password" type="password">
-    </md-input-container>
-
-    <!-- confirm password input -->
-    <md-input-container>
-      <label>Confirm Password</label>
-      <input ng-model="confirmpw" ng-required type="password">
       <div>
-        <span ng-show="user.password !== confirmpw">passwords must match</span>
+        <span ng-show="user.password !== confirmpw" class="passwordsMustMatch">passwords must match</span>
       </div>
-    </md-input-container>
 
     <!-- create account button -->
     <md-button id="createAccount" class="md-raised md-primary" ng-click="signup()">Create New Account</md-button>

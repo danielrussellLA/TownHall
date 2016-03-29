@@ -21,7 +21,7 @@ body {
 
 /* Signin Signout */
 
-.signinSignoutTitle {
+.signinSignupTitle {
   color:  #2ECC71;
 }
 
@@ -33,7 +33,7 @@ body {
   color: white;
 }
 
-.signinSignoutInput {
+.signinSignupInput {
   margin: 0 auto;
   margin-bottom: 15px;
   display: block;
@@ -47,6 +47,10 @@ body {
 .signinButton {
   margin: 0 auto;
   display: block;
+}
+
+.passwordsMustMatch {
+  color: #E74C3C;
 }
 
 /************************* Nav Bar **********************************/
@@ -65,6 +69,7 @@ body {
   background-color: #2ECC71;
   position: absolute;
   z-index: 1;
+  margin-top: 0px;
 }
 
 .dashboardMenuBar {
@@ -83,10 +88,10 @@ body {
   cursor: pointer;
   outline: none;
   /*font-family: 'Satisfy', cursive;*/
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Damion', cursive;
   font-size: 1.75em;
-  /*color: white;*/
-  color: #2ECC71;
+  color: #fff;
+  /*color: #2ECC71;*/
   width: 150px;
   padding-top: 8px;
   padding-left: 15px;
@@ -96,7 +101,7 @@ body {
 .tools {
  float: right;
  padding-right: 2%;
- margin-top: -50px;
+ margin-top: -55px;
 }
 
 .tool {
@@ -107,10 +112,10 @@ body {
 
 
 .profileContainer {
-  min-height: calc(100vh - 118px);
-  max-height: calc(100vh - 118px);
+  min-height: calc(100vh - 80px);
+  max-height: calc(100vh - 80px);
   overflow: scroll;
-  padding-top: 70px;
+  padding-top: 20px;
   background-color: #34495E;
 }
 
@@ -425,6 +430,7 @@ button {
   width: 100px;
   height: 50px;
   color: #2ECC71;
+  top: 0;
 }
 
 .editListTitle {
@@ -494,7 +500,7 @@ button {
  width: 2000px;
  overflow-x: auto;
  padding-left: 5px;
- padding-top: 35px;
+ padding-top: 20px;
  min-height: calc(100vh);
  background-color: #ECF0F1;
 }
@@ -557,10 +563,10 @@ ul[dnd-list] > li {
 */
 
 .mainContainer .dndPlaceholder {
-  background-color: white !important;
-  /*min-height: 50px;*/
+  background-color: #ECF0F1 !important;
+  min-height: 500px;
   border: none;
-  width: 320px;
+  width: 275px;
   display: block;
 }
 
@@ -677,7 +683,7 @@ input, .messageInput {
 .messageContainer {
   min-height: calc(100vh - 90px);
   max-height: calc(100vh - 90px);
-
+  margin-top: 0px;
   background-color: #34495E;
   overflow: scroll;
 }
