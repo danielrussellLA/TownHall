@@ -1,0 +1,30 @@
+<div layout="row">
+
+  <div layout="column">
+    <h3>Choose a Profile Pic</h3>
+    <div layout="row">
+      <div layout="column">
+        <img src="../../assets/user1.png" class="alien" ng-click="updateImage('../../assets/user1.png')">
+        <img src="../../assets/user2.png" class="alien" ng-click="updateImage('../../assets/user2.png')">
+        <img src="../../assets/user3.png" class="alien" ng-click="updateImage('../../assets/user3.png')">
+      </div>
+      <div layout="column">
+        <img src="../../assets/user4.png" class="alien" ng-click="updateImage('../../assets/user4.png')">
+        <img src="../../assets/user5.png" class="alien" ng-click="updateImage('../../assets/user5.png')">
+        <img src="../../assets/user6.png" class="alien" ng-click="updateImage('../../assets/user6.png')">
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <h3>Upload your Own</h3>
+    <form ng-submit="updateImage(url)">
+      <md-input-container>
+        <label>Image Url</label>
+        <input ng-model="url" type="text"></input>
+        <md-button aria-label="Add URL" ng-click="updateImage(url)"><i class="fa fa-link"></i></md-button>
+      </md-input-container>
+    </form>
+    <md-button ng-click="hideDialog()">Cancel</md-button>
+  </div>
+</div>

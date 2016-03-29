@@ -184,6 +184,11 @@ md-card-content {
   padding: 15px;
 }
 
+.alien {
+  height: 150px;
+  width: 150px;
+}
+
 /********** Board Styling ********************/
 
 button {
