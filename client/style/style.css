@@ -450,6 +450,8 @@ button {
  background-color: #fff;
  text-align: left;
  word-wrap: break-word;
+ margin-left: 10px;
+ margin-bottom: 10px;
 }
 
 .cardText {
@@ -506,7 +508,7 @@ ul[dnd-list] > li {
  position: relative;
  /*border: 1px solid black;*/
  float: left;
- margin: 5px;
+ /*margin: 5px;*/
 }
 
 /**** mainContainer Stylying *****/
@@ -565,7 +567,8 @@ ul[dnd-list] > li {
 .mainContainer li .dndPlaceholder {
   background-color: #575C60 !important;
   min-height: 60px;
-  margin: 5px;
+  margin-bottom: 10px;
+  margin-left: 10px;
   width: 225px;
   /*display: block;*/
 }
