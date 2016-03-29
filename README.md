@@ -1,6 +1,6 @@
 # TownHall
 
-> *"Plan less, do more"*
+> *"Just Plan It"*
 
 ## Team
 
