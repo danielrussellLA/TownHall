@@ -21,6 +21,11 @@ body {
 
 /* Signin Signout */
 
+.signinSignupContainer {
+  margin: 0 auto;
+  display: block;
+}
+
 .signinSignupTitle {
   color:  #2ECC71;
 }
@@ -84,6 +89,8 @@ body {
 }
 
 
+
+
 .logo {
   cursor: pointer;
   outline: none;
@@ -124,7 +131,6 @@ md-content {
     position: relative;
     overflow: auto;
     background-color: #34495E;
-    margin-left: 35px;r
     -webkit-overflow-scrolling: touch;
 }
 
@@ -152,12 +158,80 @@ md-card-content {
 }
 
 #signin a {
- color: white;
+ /*color: white;*/
 }
 
 #signup a {
- color: rgb(63,81,181);
+ /*color: rgb(63,81,181);*/
  font-weight: bold;
+}
+
+/********** Landing Page Styling ********************/
+.landingPageContainer {
+  overflow: scroll;
+  height: calc(100vh);
+}
+.landingPageHeader {
+  text-align: center;
+  color: white;
+  height: 500px;
+}
+
+.landingPageLogo {
+  /*font-family: 'Satisfy', cursive;*/
+  padding-top: 25px;
+  font-family: 'Damion', cursive;
+  font-size: 7em;
+  color: #fff;
+  /*color: #2ECC71;*/
+  /*width: 150px;*/
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+
+.landingPageTagline {
+  margin: 0 auto;
+  display: block;
+  color: #fff;
+  font-family: 'Damion', cursive;
+  font-size: 1.5em;
+  /*font-style: italic;*/
+  margin-top: -15px;
+  text-align: center;
+}
+
+.landingPageSigninSignupForm {
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+.landingPageSigninSignupButtons a {
+  margin: 0 auto;
+  display: block;
+  color: #2ECC71 !important;
+}
+
+.landingPageDescription {
+  background-color: #ECF0F1;
+  color: #616161;
+  width: 100%;
+  text-align: center;
+}
+
+.landingPageDescriptionTitle {
+  font-family: 'Damion', cursive;
+  padding-top: 25px;
+  font-size: 3em;
+}
+
+.landingPageImages {
+  border-radius: 8px;
+  box-shadow: -5px 5px 5px darkgrey;
+}
+
+.landingPageHowTos {
+  margin-top: 55px;
 }
 
 /********** Profile Styling ********************/
