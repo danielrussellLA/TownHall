@@ -17,19 +17,23 @@ TownHall.controller('profileCtrl', function($scope, Auth, User, $state, dataFact
   };
 
   // updates the user's information in the database and in localStorage
-  $scope.updateProfile = function(val) {
+  $scope.updateName = function(val) {
     var getAuth = Auth.getAuth();
     var user = {
       uid: getAuth.uid,
       name: val
     };
+    $scope.updateProfile(user);
+  };
+
+  $scope.updateProfile = function(user) {
     // sends the user info to fetch the specific user's info from the Users table
     profileFactory.updateProfile(user).then(function() {
       User.getUser(user, function(fetchedData) {
         // updates the information in the database and the localStorage
         var userInfo = JSON.stringify(fetchedData[0]);
         localStorage.setItem('userInfo', userInfo);
-        $scope.userName = val;
+        $scope.setUserInfo(fetchedData[0]);
       });
     });
   };
@@ -114,6 +118,17 @@ TownHall.controller('profileCtrl', function($scope, Auth, User, $state, dataFact
         $scope.getBoards(user);
       });
     }
+  };
+
+  $scope.openUserImageModal = function() {
+    $mdDialog.show({
+      clickOutsideToClose: true,
+      locals: {
+        updateProfile: $scope.updateProfile
+      },
+      templateUrl: 'app/profile/userImageModal.html',
+      controller: 'userImageModalCtrl'
+    });
   };
 
   // responds to an invitation using the boardId and updates the response based on whether the user clicks join or deny

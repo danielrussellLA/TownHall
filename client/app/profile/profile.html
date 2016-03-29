@@ -56,9 +56,9 @@
   <md-content layout="row">
     <!-- user information -->
     <md-card flex="25" class="userContainer" hide-sm hide-xs>
-      <img src="{{userImage}}" class="md-card-image" alt="Profile Picture">
+      <img src="{{userImage}}" class="md-card-image" alt="Profile Picture" ng-click="openUserImageModal()">
       <md-card-content>
-        <div inline-edit=userName inline-edit-placeholder="Edit Name" inline-edit-on-blur="cancel" inline-edit-btn-edit='<i class="fa fa-pencil"></i>' inline-edit-callback='updateProfile(newValue)'></div>
+        <div inline-edit=userName inline-edit-placeholder="Edit Name" inline-edit-on-blur="cancel" inline-edit-btn-edit='<i class="fa fa-pencil"></i>' inline-edit-callback='updateName(newValue)'></div>
       </md-card-content>
     </md-card>
 
