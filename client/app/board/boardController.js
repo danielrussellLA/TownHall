@@ -57,7 +57,7 @@ TownHall.controller('boardCtrl', function($scope, $window, $mdDialog, $state, $t
   $scope.removeList = function(ev, index) {
     var confirm = $mdDialog.confirm()
     .title('Remove List')
-    .textContent('Are you sure?  You cannot undo.')
+    .textContent('Are you sure? You cannot undo.')
     .ariaLabel('Remove List')
     .targetEvent(ev)
     .ok('Delete')

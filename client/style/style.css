@@ -16,6 +16,46 @@ li {
 
 body {
   overflow-y: hidden;
+  background-color: #34495E;
+}
+
+/* Signin Signout */
+
+.signinSignupContainer {
+  margin: 0 auto;
+  display: block;
+}
+
+.signinSignupTitle {
+  color:  #2ECC71;
+}
+
+.haveAnAccount {
+  color:  #2ECC71;
+}
+
+.createAnAccountSignin {
+  color: white;
+}
+
+.signinSignupInput {
+  margin: 0 auto;
+  margin-bottom: 15px;
+  display: block;
+  color: #2ECC71 !important;
+  background-color: #2C3E50;
+  border: 1px solid #2ECC71;
+  height: 1.9em;
+  border-radius: 2px;
+}
+
+.signinButton {
+  margin: 0 auto;
+  display: block;
+}
+
+.passwordsMustMatch {
+  color: #E74C3C;
 }
 
 /************************* Nav Bar **********************************/
@@ -34,6 +74,7 @@ body {
   background-color: #2ECC71;
   position: absolute;
   z-index: 1;
+  margin-top: 0px;
 }
 
 .dashboardMenuBar {
@@ -48,12 +89,16 @@ body {
 }
 
 
+
+
 .logo {
   cursor: pointer;
   outline: none;
-  font-family: 'Satisfy', cursive;
+  /*font-family: 'Satisfy', cursive;*/
+  font-family: 'Damion', cursive;
   font-size: 1.75em;
-  color: white;
+  color: #fff;
+  /*color: #2ECC71;*/
   width: 150px;
   padding-top: 8px;
   padding-left: 15px;
@@ -63,7 +108,7 @@ body {
 .tools {
  float: right;
  padding-right: 2%;
- margin-top: -58px;
+ margin-top: -55px;
 }
 
 .tool {
@@ -74,10 +119,10 @@ body {
 
 
 .profileContainer {
-  min-height: calc(100vh - 118px);
-  max-height: calc(100vh - 118px);
+  min-height: calc(100vh - 80px);
+  max-height: calc(100vh - 80px);
   overflow: scroll;
-  padding-top: 70px;
+  padding-top: 20px;
   background-color: #34495E;
 }
 
@@ -86,7 +131,6 @@ md-content {
     position: relative;
     overflow: auto;
     background-color: #34495E;
-    margin-left: 35px;r
     -webkit-overflow-scrolling: touch;
 }
 
@@ -114,12 +158,80 @@ md-card-content {
 }
 
 #signin a {
- color: white;
+ /*color: white;*/
 }
 
 #signup a {
- color: rgb(63,81,181);
+ /*color: rgb(63,81,181);*/
  font-weight: bold;
+}
+
+/********** Landing Page Styling ********************/
+.landingPageContainer {
+  overflow: scroll;
+  height: calc(100vh);
+}
+.landingPageHeader {
+  text-align: center;
+  color: white;
+  height: 500px;
+}
+
+.landingPageLogo {
+  /*font-family: 'Satisfy', cursive;*/
+  padding-top: 25px;
+  font-family: 'Damion', cursive;
+  font-size: 7em;
+  color: #fff;
+  /*color: #2ECC71;*/
+  /*width: 150px;*/
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+
+.landingPageTagline {
+  margin: 0 auto;
+  display: block;
+  color: #fff;
+  font-family: 'Damion', cursive;
+  font-size: 1.5em;
+  /*font-style: italic;*/
+  margin-top: -15px;
+  text-align: center;
+}
+
+.landingPageSigninSignupForm {
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+.landingPageSigninSignupButtons a {
+  margin: 0 auto;
+  display: block;
+  color: #2ECC71 !important;
+}
+
+.landingPageDescription {
+  background-color: #ECF0F1;
+  color: #616161;
+  width: 100%;
+  text-align: center;
+}
+
+.landingPageDescriptionTitle {
+  font-family: 'Damion', cursive;
+  padding-top: 25px;
+  font-size: 3em;
+}
+
+.landingPageImages {
+  border-radius: 8px;
+  box-shadow: -5px 5px 5px darkgrey;
+}
+
+.landingPageHowTos {
+  margin-top: 55px;
 }
 
 /********** Profile Styling ********************/
@@ -149,7 +261,8 @@ md-card-content {
   height: 100px;
   text-align: center;
   margin: 10px;
-  color: #2C3E50;
+  /*color: #2C3E50;*/
+  color: white;
   background-color: #2ECC71;
 }
 
@@ -167,21 +280,161 @@ md-card-content {
 .fa.fa-ellipsis-v {
   margin-top: 5px;
 }
+/********************** Modal Styles ************************/
+md-dialog, md-dialog-content, md-dialog-actions {
+  background-color: #34495E;
+  color: #2ECC71;
+  text-align: center;
+}
+
+button.md-default-theme.md-primary, .md-button.md-primary {
+  color: #2ECC71 !important;
+  background-color: #2C3E50 !important;
+}
 
 .createBoardModal {
   padding: 15px;
+  background-color: #2C3E50;
+  color: #2ECC71;
+  min-width: 300px;
+}
+
+.createBoardTitle {
+  text-align: center;
+}
+
+.inviteMembersTitle {
+  text-align: center;
+}
+
+.newBoardNameInput {
+  margin: 0 auto;
+  display: block;
+  color: #2ECC71 !important;
+  background-color: #2C3E50;
+  border: 1px solid #2ECC71;
+  height: 1.9em;
+  border-radius: 2px;
+}
+
+.invitedBoardMembers {
+  margin: 0 auto;
+  /*display: block;*/
+  min-height: 100px;
+  margin-top: 15px;
+  /*border: 1px solid #2ECC71;*/
+}
+
+.inviteMembersButton {
+  margin: 0 auto;
+  display: block;
+  margin-top: 5px;
+}
+
+.createBoardButton {
+  display: block;
+  margin: 0 auto;
+  /*background-color: #2ECC71;*/
 }
 
 .successfulInvite {
-  color: green;
+  color: #2C3E50;
+  padding: 10px;
+  display: inline;
+  font-size: .75em;
+  border-radius: 3px;
+  margin: 5px;
+  background-color: #2ECC71;
 }
 
 .userDoesntExist {
-  color: red;
+  color: #E74C3C;
+  text-align: center;
+}
+
+.newBoardInviteMembersInput {
+  margin: 0 auto;
+  display: block;
+  color: #2ECC71 !important;
+  background-color: #2C3E50;
+  border: 1px solid #2ECC71;
+  height: 1.9em;
+  border-radius: 2px;
 }
 
 .cardModal {
   padding: 15px;
+  background-color: #2C3E50;
+  color: #2ECC71;
+  min-width: 300px;
+}
+
+.cardModalTitle {
+  text-align: center;
+}
+
+.cardModalText {
+  padding: 15px;
+  height: 100%;
+  background-color: #ECF0F1;
+  color: #616161;
+  border-radius: 10px;
+  max-width: 300px;
+  word-wrap: break-word;
+  margin-top: 0;
+  margin: 5px;
+  word-wrap: break-word;
+}
+
+.cardModalText:hover {
+  background-color: rgba(46, 204, 113, .15);
+  cursor: pointer;
+  color: white;
+}
+
+.commentUsername {
+  font-size: .8em;
+  color: #ECF0f1;
+  margin-bottom: 2px;
+  margin-left: 15px;
+}
+
+.comment {
+  margin: 0 auto;
+  display: block;
+  padding: 15px;
+  height: 100%;
+  background-color: #2ECC71;
+  color: #2C3E50;
+  border-radius: 10px;
+  word-wrap: break-word;
+  max-width: 300px;
+}
+
+.commentList {
+  margin: 0 auto;
+  padding-left: 0px;
+  width: 80%;
+}
+
+.commentInput {
+  margin: 0 auto;
+  display: block;
+  padding: 15px;
+  height: 100%;
+  background-color: #ECF0F1;
+  color: #616161;
+  border-radius: 10px;
+  max-width: 300px;
+  word-wrap: break-word;
+  /*margin-top: 0;*/
+  /*margin: 5px;*/
+  word-wrap: break-word;
+}
+
+.addCommentButton {
+  margin: 0 auto;
+  display: block;
 }
 
 .alien {
@@ -251,6 +504,7 @@ button {
   width: 100px;
   height: 50px;
   color: #2ECC71;
+  top: 0;
 }
 
 .editListTitle {
@@ -276,6 +530,8 @@ button {
  background-color: #fff;
  text-align: left;
  word-wrap: break-word;
+ margin-left: 10px;
+ margin-bottom: 10px;
 }
 
 .cardText {
@@ -318,7 +574,7 @@ button {
  width: 2000px;
  overflow-x: auto;
  padding-left: 5px;
- padding-top: 35px;
+ padding-top: 20px;
  min-height: calc(100vh);
  background-color: #ECF0F1;
 }
@@ -332,7 +588,7 @@ ul[dnd-list] > li {
  position: relative;
  /*border: 1px solid black;*/
  float: left;
- margin: 5px;
+ /*margin: 5px;*/
 }
 
 /**** mainContainer Stylying *****/
@@ -381,17 +637,18 @@ ul[dnd-list] > li {
 */
 
 .mainContainer .dndPlaceholder {
-  background-color: white !important;
-  /*min-height: 50px;*/
+  background-color: #ECF0F1 !important;
+  min-height: 500px;
   border: none;
-  width: 320px;
+  width: 275px;
   display: block;
 }
 
 .mainContainer li .dndPlaceholder {
   background-color: #575C60 !important;
   min-height: 60px;
-  margin: 5px;
+  margin-bottom: 10px;
+  margin-left: 10px;
   width: 225px;
   /*display: block;*/
 }
@@ -412,17 +669,6 @@ ul[dnd-list] > li {
  height: 500px;
  width: 200px;
  text-align: center;
-}
-
-.cardModalText:hover {
-  background-color: pink;
-  cursor: pointer;
-}
-
-.comment {
-  white-space: pre-wrap;
-  background-color: grey;
-  margin: 5px;
 }
 
 /************* master styles for main dashboard view **************/
@@ -511,7 +757,7 @@ input, .messageInput {
 .messageContainer {
   min-height: calc(100vh - 90px);
   max-height: calc(100vh - 90px);
-
+  margin-top: 0px;
   background-color: #34495E;
   overflow: scroll;
 }
@@ -545,9 +791,10 @@ input, .messageInput {
   display: none !important;
 }
 
+
+/* Media Queries */
 @media(max-width: 600px) {
   .flexContainer {
     padding-left: 67px;
   }
 }
-

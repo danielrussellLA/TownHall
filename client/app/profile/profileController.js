@@ -80,6 +80,7 @@ TownHall.controller('profileCtrl', function($scope, Auth, User, $state, dataFact
         });
       });
       $scope.invitations = invitations;
+      console.log($scope.invitations);
     });
   };
 
