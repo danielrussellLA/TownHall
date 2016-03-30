@@ -175,7 +175,7 @@ md-card-content {
 .landingPageHeader {
   text-align: center;
   color: white;
-  height: 500px;
+  height: 450px;
 }
 
 .landingPageLogo {
@@ -203,7 +203,7 @@ md-card-content {
 }
 
 .landingPageSigninSignupForm {
-  margin-top: 110px;
+  margin-top: 65px;
   margin-bottom: 50px;
 }
 
